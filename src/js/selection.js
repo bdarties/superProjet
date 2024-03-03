@@ -1,4 +1,5 @@
-import Phaser from "phaser";
+import * as fct from "/src/js/fonctions.js";
+
 /***********************************************************************/
 /** VARIABLES GLOBALES 
 /***********************************************************************/
@@ -45,6 +46,9 @@ export default class selection extends Phaser.Scene {
    * ainsi que toutes les instructions permettant de planifier des evenements
    */
   create() {
+      fct.doNothing();
+      fct.doAlsoNothing();
+
     /*************************************
      *  CREATION DU MONDE + PLATEFORMES  *
      *************************************/

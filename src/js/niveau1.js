@@ -1,5 +1,4 @@
-// chargement des librairies
-import Phaser from "phaser";
+import * as fct from "/src/js/fonctions.js";
 
 export default class niveau1 extends Phaser.Scene {
   // constructeur de la classe
@@ -8,9 +7,13 @@ export default class niveau1 extends Phaser.Scene {
       key: "niveau1" //  ici on précise le nom de la classe en tant qu'identifiant
     });
   }
-  preload() {}
+  preload() {
+  }
 
   create() {
+    fct.doNothing();
+    fct.doAlsoNothing();
+
     this.add.image(400, 300, "img_ciel");
     this.groupe_plateformes = this.physics.add.staticGroup();
     this.groupe_plateformes.create(200, 584, "img_plateforme");
